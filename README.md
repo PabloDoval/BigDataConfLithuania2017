@@ -14,7 +14,7 @@
     * environment.bat (if you are running Windows)
     * . ./environment.sh (for you, Linux folks)
 
-3. Once the script finishes running, that environment will be active. The name of the environment is *cntk22*, in case you want to activate it manually.
+3. Once the script finishes running, that environment will be active. The name of the environment is *cntk23-bigdataconflithuania*, in case you want to activate it manually.
 
 4. Run the *main.py* to check that the CNTK environment and dependencies have been propertly setup. The output will show the version of the CNTK distribution, as well as the number of CPUs and GPUs available in our machine.
 

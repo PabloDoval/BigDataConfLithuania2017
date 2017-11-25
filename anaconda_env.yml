@@ -1,4 +1,4 @@
-name: cntk23-bigdatconflithuania
+name: cntk23-bigdataconflithuania
 channels:
 - defaults
 dependencies:

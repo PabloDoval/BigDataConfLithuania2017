@@ -4,5 +4,5 @@ if [ $? -ne 0 ]
 then
     echo '[ERROR]: Something wrong happened during the creation of the environment.';
 else
-    source activate cntk23-bigdatconflithuania
+    source activate cntk23-bigdataconflithuania
 fi
