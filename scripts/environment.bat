@@ -4,5 +4,5 @@ if %errorlevel% neq 0 (
     echo "[ERROR]: Something wrong happened during the creation of the environment." 
     exit /b %ERRORLEVEL%
     ) else (
-        activate cntk22
+        activate cntk23-bigdatconflithuania
     )
