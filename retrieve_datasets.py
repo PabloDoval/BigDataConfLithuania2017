@@ -7,8 +7,8 @@ from settings import MINST_DOWNLOAD_INFO, NIST_SD4_DOWNLOAD_INFO
 
 if __name__ == '__main__':
 
-    #mnist_downloader = MnistDownloader(MINST_DOWNLOAD_INFO)
-    #mnist_downloader.download_and_save_data()
+    mnist_downloader = MnistDownloader(MINST_DOWNLOAD_INFO)
+    mnist_downloader.download_and_save_data()
 
     nist_sd4_downloader = NistSD4Downloader(NIST_SD4_DOWNLOAD_INFO)
     nist_sd4_downloader.download_and_save_data()
