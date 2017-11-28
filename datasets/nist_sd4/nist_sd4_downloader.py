@@ -22,8 +22,8 @@ class NistSD4Downloader:
         self.dataset_name = nist_sd4_info.get('DATASET_NAME')
         self.destinationFolder = NIST_SD4_DATA_FOLDER
         self.fileName = os.path.join(self.destinationFolder, nist_sd4_info.get('FILE_NAME'))
-        self.testFolder = os.path.join(self.destinationFolder, "test")
-        self.trainFolder = os.path.join(self.destinationFolder, "train")
+        self.testFolder = os.path.join(self.destinationFolder, "testImgs")
+        self.trainFolder = os.path.join(self.destinationFolder, "trainImgs")
         self.testSamples = nist_sd4_info.get('TEST_SAMPLES')
         self.trainSamples = nist_sd4_info.get('TRAIN_SAMPLES')
 
@@ -167,5 +167,6 @@ class NistSD4Downloader:
         self.__downloadDataset()
 
     def process(self):
-        self.__processImages(self.trainFolder, 'train', self.trainSamples)
-        self.__processImages(self.testFolder, 'test', self.testSamples)
+
+        self.__processImages(self.trainFolder, os.path.join(NIST_SD4_DATA_FOLDER, 'train'), self.trainSamples)
+        self.__processImages(self.testFolder, os.path.join(NIST_SD4_DATA_FOLDER, 'test'), self.testSamples)

@@ -17,7 +17,7 @@ NIST_SD4_DOWNLOAD_INFO = {
     'DATASET_NAME': 'NIST-SD4',
     'FILE_NAME': 'NISTSpecialDatabase4GrayScaleImagesofFIGS.zip',
     'BASE_URL': 'https://s3.amazonaws.com/nist-srd/SD4/NISTSpecialDatabase4GrayScaleImagesofFIGS.zip',
-    'TRAIN_SAMPLES': 3500,
-    'TEST_SAMPLES': 500
+    'TRAIN_SAMPLES': 50,
+    'TEST_SAMPLES': 5
 }
 TENSOR_LOG_DIR = 'log'
