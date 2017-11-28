@@ -100,5 +100,6 @@ ENV/
 
 .vscode
 
-mnistdata/files/
+datasets/mnistdata/files/
+datasets/nist_sd4/files/
 log/
