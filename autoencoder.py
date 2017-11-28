@@ -159,10 +159,10 @@ if __name__ == "__main__":
     features = C.input_variable(features_shape, name='features')
     labels = C.input_variable(num_output_classes, name='labels')
 
-    train_folder = os.path.join("datasets", "nist_sd4", "train")
-    train_file=os.path.join(train_folder, "trainData.txt")
-    test_folder = os.path.join("datasets", "nist_sd4", "test")
-    test_file=os.path.join(test_folder, "testData.txt")
+    train_folder = os.path.join("datasets", "nist_sd4", "files")
+    train_file=os.path.join(train_folder, "train")
+    test_folder = os.path.join("datasets", "nist_sd4", "files")
+    test_file=os.path.join(test_folder, "test")
 
     #Train autoencoder
     autoencoder_definition = train_autoencoder()
