@@ -1,5 +1,6 @@
 from .mnist_model import MnistModel
 import cntk
+from utils.activationfunctions.activations import swish;
 
 
 class ConvolutionalMaxPooling(MnistModel):
@@ -9,7 +10,7 @@ class ConvolutionalMaxPooling(MnistModel):
         self.create_model()
 
     def create_model(self):
-        with cntk.layers.default_options(init=cntk.glorot_uniform(), activation=cntk.relu):
+        with cntk.layers.default_options(init=cntk.glorot_uniform(), activation=swish):
             h = self.input_transform
             h = cntk.layers.Convolution2D(filter_shape=(5, 5),
                                           num_filters=8,

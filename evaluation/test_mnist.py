@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from mnistdata.ctf_reader import init_reader
+from datasets.mnistdata.ctf_reader import init_reader
 import numpy as np
 
 
